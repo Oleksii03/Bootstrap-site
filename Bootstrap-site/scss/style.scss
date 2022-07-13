@@ -1,0 +1,226 @@
+$color1: #05b1b1;
+$color2: #52339a;
+
+
+section {
+  padding: 100px 0;
+}
+
+header {
+  padding: 200px 0;
+}
+
+footer {
+  padding: 20px 0;
+}
+
+header,
+footer {
+  background: #6495ed;
+  background: url(/image/pattern.png), -moz-linear-gradient(top, #0066cc 10%, #ffcc00 100%);
+  background: url(/image/pattern.png), -webkit-linear-gradient(top, #0066cc 10%, #ffcc00 100%);
+  background: url(/image/pattern.png), linear-gradient(to bottom, #0066cc 10%, #ffcc00 100%);
+  filter: url(/image/pattern.png), progid:DXImageTransform.Microsoft.gradient(startColorstr='#0066cc', endColorstr='#ffcc00', GradientType=0);
+  background-size: contain;
+}
+
+.itd_play {
+  background-color: $color1;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  margin: 30px auto;
+  transition: all 0.4s ease;
+
+  &:hover {
+    background-color: $color2;
+  }
+
+  .itd_triangle {
+    margin-right: -4px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 10px 0 10px 20px;
+    border-color: transparent transparent transparent var(--bs-white);
+  }
+}
+
+.btn-itd {
+  border: none;
+  display: block;
+  max-width: 200px;
+  margin: 0 auto;
+  padding: 8px 20px;
+  color: #fff;
+  background-color: $color2;
+
+  &:hover {
+    color: #fff;
+    box-shadow: 1px 1px 6px 2px rgba(0, 0, 0, 0.5);
+    background-color: $color1;
+  }
+}
+
+.embed-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+  position: absolute;
+  top: 0;
+  right: 50%;
+  width: 100%;
+  height: 100%;
+}
+
+.color1 {
+  color: $color1;
+}
+
+.color2 {
+  color: $color2;
+}
+
+// про курс 
+.about,
+.shedule,
+.author,
+.buy {
+  background-color: rgb(243, 233, 228);
+
+  i,
+  svg {
+    color: $color2;
+  }
+
+  .itd-circle {
+    margin: 0 auto 15px;
+    width: 70px;
+    height: 70px;
+    border: 3px solid $color2;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .line {
+    width: 60px;
+    height: 3px;
+    background: $color2;
+    margin: 15px auto 30px;
+  }
+}
+
+// -/прокурс
+
+// ДЛЯ КОГО КУРС
+.forwhom {
+  h5 {
+    padding: 40px;
+    border: 3px solid $color1;
+  }
+}
+
+// -/ДЛЯ КОГО КУРС
+
+.accordion-button:not(.collapsed) {
+  color: #0066cc;
+  background: #ffcc00;
+  font-weight: bold;
+}
+
+// ПРОЦЕС НАВЧАННЯ
+.learning {
+  h5 {
+    font-size: 16px;
+    padding: 20px;
+    border: 3px solid $color2;
+  }
+}
+
+// ПРО АВТОРА
+.author {
+  padding-bottom: 0;
+
+  .itd-img {
+    max-width: 260px;
+  }
+
+  p {
+    font-size: 1em;
+    font-weight: 500;
+
+  }
+}
+
+// ВІДГУКИ
+.reviws {
+  .reviws__photo {
+    border-radius: 50%;
+    border: 4px solid $color1;
+    display: block;
+    margin: 0 auto;
+  }
+
+  p {
+    text-align: justify;
+    margin: 0;
+  }
+
+  .line {
+    width: 100px;
+    height: 4px;
+    background-color: $color2;
+    margin: 20px auto 0;
+    border-radius: 5px;
+  }
+
+  .line__item {
+    width: 100px;
+    height: 4px;
+    background-color: $color2;
+    margin: 5px auto 0;
+    border-radius: 5px;
+  }
+}
+
+.buy {
+  p {
+    text-align: justify;
+  }
+}
+
+// КУПИТИ
+.form {
+  background-color: #05b1b194;
+  // border: 3px solid $color2;
+  border-radius: 10px;
+  margin: 40px auto;
+  padding: 20px;
+
+  button {
+    display: block;
+    padding: 3px 7px;
+    margin-top: 32px;
+    background-color: $color2;
+    border: none;
+
+    &:hover {
+      background-color: #05b1b166;
+    }
+  }
+}
+
+// /КУПИТИ
